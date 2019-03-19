@@ -4,7 +4,14 @@ var seasonType = ""
 var snowLocationX = []
 var snowLocationY = []
 var snowAmount =100
+var leafLocationY
+var leafLocationX
+var leafAmount = 80
 
+function preload(){
+  leafImage = loadImage("yezi.png")
+
+}
 
 
 function setup() {
@@ -28,6 +35,10 @@ console.log(x)
    snowLocationX[i] = random(0, width);
    snowLocationY[i] = random(0, -500);
  }
+ for(var l= 0; l <leafAmount; l++){
+   leafLocationX[l] = random(0, width);
+     leafLocationY[l] = random(0, -500);
+ }
 
 }
 
@@ -39,7 +50,8 @@ stroke(0)
 textSize(20)
 text(seasonType,10,75)
 
-seasonType=="Winter"
+
+
 if (seasonType == "Spring") {
     // flower
     line(width / 2, height / 2, width / 2, 300);
@@ -58,16 +70,27 @@ if (seasonType == "Spring") {
 
   }else if(seasonType=="Winter"){
     for(var i=0; i<snowAmount; i++){
-      fill(200)
-      ellipse(snowLocationX[i],snowLocationY,10,20)
-      snowLocationY[i]=snowLocationY[i]+1
+      fill(200);
+      ellipse(snowLocationX[i],snowLocationY[i],10,10);
+      snowLocationY[i]=snowLocationY[i]+1;
 
       if(snowLocationY[i]>height){
-        snowLocationY[i] = random(0,-500)
+        snowLocationY[i] = random(0,-500);
         snowLocationX[i] = random(0,width);
       }
     }
   }
+  else if (seasonType == "fall") {
+  for (var i = 0; i < leafAmount; i++) {
+    console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
+    image(leafImage, leafLocationX[i], leafLocationY[i], 20,20);
+
+    if(leafLocationY[i] < height - 20){
+      leafLocationY[i]++;
+      leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));
+    }
 
 
+}
+}
 }
