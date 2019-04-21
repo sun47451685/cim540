@@ -3,17 +3,18 @@
 //////////////////////////////////////////////////////////
 //brush sample from: https://github.com/magicbrush/PixelArray
 //ideal from : https://blog.csdn.net/qq_40216805/article/details/85415233
+//orignal code: http://alpha.editor.p5js.org/WestRiverLin/sketches/SJnD_deBW
 /////////////////////////////////////////////////////////
-Shortcut key:
-D : background color
-B : Switch the brush type.
-Space : Play/Pause.
-T : Timer tool.
-E : Eraser.
-C : Clear canvas.
-S : Save canvas to PNG file.
-L Shift: Hide the menu.
-*/
+//Shortcut key:
+//D : background color
+//B : Switch the brush type.
+//Space : Play/Pause.
+//T : Timer tool.
+//E : Eraser.
+//C : Clear canvas.
+//S : Save canvas to PNG file.
+//L Shift: Hide the menu.
+///////////////////////////////////////////////////////
 
 //定义变量
 var objs = [];
@@ -602,13 +603,13 @@ function draw() {
       textAlign(LEFT);
       textSize(20);
       fill(255 - bR);
-      text("动态绘画板", 250, height - 300);
+      text("Sam's Drawing Board", 250, height - 300);
     } else if (timepast < 5) {
       noStroke();
       textAlign(LEFT);
       textSize(20);
       fill(255 - bR);
-      text("按Shift键隐藏菜单栏；按S保存画布.", 160, height - 300);
+      text("[Shift] to hide the menu；[s]to save.", 160, height - 300);
     }
   }
   //===================

@@ -29,6 +29,8 @@ you can also use your mouse to click those function buttons.
 ////////////////////////////////////////////
 //orginal example
 //https://blog.csdn.net/qq_40216805/article/details/85415233
+//orginal code:
+//http://alpha.editor.p5js.org/WestRiverLin/sketches/SJnD_deBW
 ///////////////////////////////////////////
 
 <a href="https://sun47451685.github.io/cim540/hw/midterm/index.html">My Midterm </a>
