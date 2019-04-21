@@ -15,8 +15,7 @@ that orginal example did(he cant add particle effect as well),
 as a result, this work doesnt have a snow fall effect.
 
 Shortcut key:
-0-9 : Select colors.
-D : Switch between day and night.
+D : background color
 B : Switch the brush type.
 Space : Play/Pause.
 T : Timer tool.
@@ -24,6 +23,7 @@ E : Eraser.
 C : Clear canvas.
 S : Save canvas to PNG file.
 L Shift: Hide the menu.
+
 
 you can also use your mouse to click those function buttons.
 ////////////////////////////////////////////
