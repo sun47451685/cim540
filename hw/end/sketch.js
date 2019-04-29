@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////
-///
+///Wake up -(unfinished)
 ////////////////////////////////////////////////////////
-//https://alanhou.org/p5-js-final-project/
+//Sam Luo
 //
 var mic = undefined;
 
@@ -248,7 +248,7 @@ function GuessItem(x, y, scl){
 	}
 }
 
-function.girl (){
+function girl (){
 	  strokeWeight(0);
 
     //呆毛
@@ -481,5 +481,4 @@ function.girl (){
 
 
 
-}
 }
