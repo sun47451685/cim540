@@ -22,4 +22,4 @@ so sound control is not available yet.
 //http://ai.baidu.com/
 ///////////////////////////////////////////
 
-<a href="https://sun47451685.github.io/cim540/hw/midterm/index.html">My Midterm </a>
+<a href="https://sun47451685.github.io/cim540/hw/end/index.html">My Midterm </a>
